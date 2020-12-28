@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Customize from './Customize';
 import Cart from './Cart';
 import './App.css';
-
+import {FEATURES} from './Store';
 
 
 class App extends Component {
@@ -47,7 +47,7 @@ class App extends Component {
           <h1>ELF Computing | Laptops</h1>
         </header>
         <main>
-          <Customize features={this.props.features}
+          <Customize features={FEATURES}
                       selected={this.state.selected}
                       updateFeature={this.updateFeature}/>
 
